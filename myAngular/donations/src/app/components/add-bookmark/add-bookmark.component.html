@@ -1,0 +1,25 @@
+<div class="back">
+<div class="model">
+  <button mat-button color="accent" (click)="close()">close</button>
+ 
+<form [formGroup]="formGroup">
+    <mat-form-field appearance="fill">
+      <mat-label>name</mat-label>
+        <input matInput type="text"   formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>url</mat-label>
+          <input matInput type="text"   formControlName="url">
+      </mat-form-field>
+      
+<mat-form-field appearance="fill">
+  <mat-label>category</mat-label>
+  <mat-select formControlName="category">
+    <mat-option *ngFor="let category of categories" [value]="category">{{category}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+    <button mat-button color="accent" [disabled]="formGroup.invalid" (click)="save()">save</button>
+    
+</form>  
+</div></div>

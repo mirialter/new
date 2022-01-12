@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "61dc62fb7fde332490a5ad1f"
+  },
+  "name": "News",
+  "bookmarks": [
+    {
+      "name": "hamodia",
+      "url": "https://hamodia.com/"
+    },
+    {
+      "name": "CNN - News",
+      "url": "https://www.cnn.com/"
+    },
+    {
+      "name": "U.S. News & World Report",
+      "url": "https://www.usnews.com/"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "61dd4ab3edd5538477611b57"
+  },
+  "name": "Social",
+  "bookmarks": [
+    {
+      "name": "FaceBook",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "name": "Instargam",
+      "url": "https://www.instagram.com/"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "61dc352f7fde332490a5ad1e"
+  },
+  "name": "google",
+  "bookmarks": [
+    {
+      "name": "gmail",
+      "url": "https://mail.google.com/"
+    },
+    {
+      "name": "googleTranslate",
+      "url": "https://translate.google.co.il/"
+    },
+    {
+      "name": "googlemaps",
+      "url": "https://www.google.co.il/maps"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "61de96459c5d11e056c33732"
+  },
+  "name": "Sport",
+  "bookmarks": [
+    {
+      "name": "NEL.com",
+      "url": "https://www.nfl.com/"
+    },
+    {
+      "name": "NBA.com",
+      "url": "https://www.nba.com/"
+    }
+  ]
+}]

@@ -1,0 +1,22 @@
+:host {
+  .bookmark {
+    width: 200px;
+    height: 20px;
+  }
+  .panel {
+    background-color: rgb(206, 198, 198);
+    margin: 4px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin: 5px;
+  }
+  a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

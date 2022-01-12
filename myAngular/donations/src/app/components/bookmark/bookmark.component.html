@@ -1,0 +1,27 @@
+
+   <mat-accordion>    
+     <mat-expansion-panel class="panel"  *ngFor="let data of allData">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            <span [innerText]="data.name"></span>
+        </mat-panel-title>
+       
+      </mat-expansion-panel-header>
+      <section >
+        <div class="bookmark" *ngFor="let bookmark of data.bookmarks">
+           
+                <a (click)="start(bookmark.url)"><span [innerText]="bookmark.name"></span></a>
+               
+            
+        </div>
+      </section>
+  </mat-expansion-panel>
+ </mat-accordion>
+  
+
+<button mat-flat-button color="primary" (click)="enterCategory()" class="button" type="submit">add category</button>
+<app-add-category *ngIf="flagEnterCategory" (myclose)="closeCategory()"  ></app-add-category>
+
+<button mat-flat-button color="primary" (click)="enterBookmark()" class="button" type="submit">add bookmark</button>
+<app-add-bookmark *ngIf="flagEnterBookmark" (myclose)="closeBookmark()" (mylogin)="newBookmark()"></app-add-bookmark>
+

@@ -1,0 +1,13 @@
+<div class="back"> 
+  <div class="model">
+  <form [formGroup]="formGroup">
+    <button mat-button color="accent" (click)="close()" >close</button>
+    <mat-form-field appearance="fill">
+      <mat-label>categoryName</mat-label>
+        <input matInput type="text" required formControlName="categoryName">
+    </mat-form-field>
+    <button mat-button color="accent" [disabled]="formGroup.invalid"(click)="save()" >save</button>
+    
+</form> 
+</div>
+</div>  
