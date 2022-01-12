@@ -24,45 +24,4 @@ api_users.get('/getCategory', async (req, res) => {
 
 })
 
-
-
-// api_users.post('/getDonorsForSomeone', async (req, res) => {
-//     let my_aggragate = [
-//         {
-//             '$match': {
-//                 'DonatKode': req.body.DonatKode
-//             }
-//         }, {
-//             '$project': {
-//                 'DonatName': '$DonatName',
-//                 'Donations': '$Donations',
-//                 'Donatphone': '$Donatphone',
-//                 'DonatKode': '$DonatKode'
-//             }
-//         }
-//     ]
-//     let theAns = await Donors.getAggregate(my_aggragate)
-//     res.json(theAns)
-
-// })
-
-// api_users.get('/getAllDonations', async (req, res) => {
-//     let my_aggragate = [
-//         {
-//             '$project': {
-//                 'DonatKode':"$DonatKode",
-//                 'DonatName':"$DonatName",
-//                 'Donation':"$Donations",
-//             }
-//         }
-//     ]
-//     let theAns = await Donors.getAggregate(my_aggragate)
-//     res.json(theAns)
-
-// })
-
-
-
-
-
 module.exports = api_users

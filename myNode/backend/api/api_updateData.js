@@ -18,22 +18,6 @@ api_users.post('/addCategory', async (req, res) => {
     res.json(new_user)
 })
 
-// api_users.post('/addBookmark', async (req, res) => {
-//     console.log(req.body);
-//     let my_user = await bookmark.getQuery(req.body.category)
-//     console.log(my_user[0],"wow!");
-//      await bookmark.removeOneObect(my_user[0])
-    
-//     my_user[0].bookmarks = [...my_user[0].bookmarksmy_user[0].bookmarks, req.body.newBookmark]
-//     // console.log(my_user[0]);
-//     let new_user = await bookmark.addUser(my_user[0])
-//     if (new_user)
-//         console.log(new_user);
-//     else
-//         console.log('dont exits in the data');
-//     console.log(new_user);
-//     res.json(new_user)
-// })
 
 api_users.post('/addBookmark', async (req, res) => {
 
